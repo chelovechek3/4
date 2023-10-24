@@ -1,20 +1,16 @@
-print("!!!!!!!!!! ВВОДИТЬ МОЖНО ТОЛЬКО МАТЕМАТИЧЕСКИЕ ОПЕРАТОРЫ, КОТОРЫЕ ЕСТЬ В ЯЗЫКЕ PYTHON!!!!!!!!!! (иначе подсчётов не будет)")
-print("Допустимые математические операторы: +, -, **-возведение в степень, /-деление с остатком, //-деление без остатка, %-только остаток от деления.")
-print("ДЕЛИТЬ НА НОЛЬ НЕЛЬЗЯ")
-b =int(input ('Введите первое число: '))
-c =str(input('Введите оператор математических действий: '))
-a =int(input( 'Введите второе число: '))
-if (c=='+'):
- print('Ответ:', (b+a))
-if (c=='-'):
- print('Ответ:', (b-a))
-if (c=='/'):
- print('Ответ:', (b/a))
-if (c=='*'):
-    print('Ответ: ',b*a)
-if (c=='%'):
-    print('Ответ: Остаток от деления равен: ',b%a)
-if (c == '//'):
-    print('Ответ: Результат деления без учёта остатка равен:', b  // a)
-if (c =='**'):
-    print('Ответ: ', b**a)
+shopping_list =[]
+shopping_list.append("яблоко")
+shopping_list.append("молоко")
+shopping_list.append("хлеб")
+shopping_list.append("яйца")
+shopping_list.append("соль")
+print (shopping_list)
+for item in shopping_list:
+    print(item)
+
+del shopping_list [1]
+print (shopping_list)
+shopping_list[0] = "банан"
+print (shopping_list)
+b =len(shopping_list)
+print (b)
